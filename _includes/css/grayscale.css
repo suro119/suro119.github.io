@@ -7,8 +7,8 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
+    font-family: Montserrat ,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #000;
     background-color: {{ site.color.primary-dark }};
 }
 
@@ -17,9 +17,20 @@ html {
     height: 100%;
 }
 
-h1,
-h2,
-h3,
+h1 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h2 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+
 h4,
 h5,
 h6 {
@@ -45,7 +56,7 @@ p {
 }
 
 a {
-    color: {{ site.color.links }};
+    color: {{ site.color.primary-light }};
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -66,7 +77,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: {{ site.color.primary-dark }};
+    background-color: {{ site.color.primary-light }};
 }
 
 .navbar-custom .navbar-brand {
@@ -89,7 +100,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: {{ site.color.primary-dark }};
 }
 
 .navbar-custom .nav li.active {
@@ -123,7 +134,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: {{ site.color.primary-dark }};
+        background-color: #fff;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -137,9 +148,9 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
-    background: url(/img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: {{ site.color.primary-dark }};
+    color: {{ site.color.primary-dark }};
+    /* background: url(/img/intro-bg.jpg) no-repeat bottom center scroll; */
+    background-color: {{ site.color.primary-light }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -179,10 +190,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid {{ site.color.primary-dark }};
     border-radius: 35px;
     font-size: 40px;
-    color: #fff;
+    color: {{ site.color.primary-dark }};
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -192,7 +203,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: {{ site.color.primary-dark }};
     background: rgba(255,255,255,.1);
 }
 
@@ -214,8 +225,20 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
+.face {
+    width: 200px;
+    border-radius:30%;
+    -moz-border-radius:30%;
+    -webkit-border-radius:30%;
+    
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+}
+
 @-webkit-keyframes pulse {    
-    0 {
+    0% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
@@ -232,7 +255,7 @@ a:focus {
 }
 
 @-moz-keyframes pulse {    
-    0 {
+    0% {
         -moz-transform: scale(1);
         transform: scale(1);
     }
@@ -252,37 +275,66 @@ a:focus {
     padding-top: 100px;
 }
 
-.download-section {
+#about {
     width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(/img/downloads-bg.jpg) no-repeat center center scroll;
+    height: 100%;
+    background-color: {{ site.color.secondary-light }};
+}
+
+.about-section {
+    padding-top: 50px;
+    color: {{ site.color.primary-dark }};
+}
+
+#skills {
+    background-color: {{ site.color.secondary-dark }};
+}
+
+.skills-section {
+    padding-bottom: 100px;
+    color: {{ site.color.primary-light }};
+}
+
+.skills-img-background {
+    display: inline-block;
+    height: 170px;
+    width: 170px;
+    background: url("img/skills/white_circle.png");
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+}
+
+.skills-img {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    height: 100px;
+}
+
+#projects {
+    background-color: {{ site.color.secondary-light }}
+}
+
+.projects-section {
+    padding-bottom: 100px;
+    color: {{ site.color.primary-dark }};
+}
+
+.project-container {
+    margin-bottom: 40px;
+}
+
+.projects-img {
+    margin-top: 15px;
+}
+
+.projects-fig {
+    margin-bottom: 30px;
+}
+
+#contact {
     background-color: {{ site.color.primary-dark }};
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
-
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 200px;
-    }
-
-    .download-section {
-        padding: 100px 0;
-    }
-
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
+    color: {{ site.color.primary-light }};
 }
 
 .btn {
@@ -295,17 +347,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid {{ site.color.links }};
-    color: {{ site.color.links }};
+    border: 1px solid {{ site.color.primary-light }};
+    color: {{ site.color.primary-light }};
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid {{ site.color.links }};
+    border: 1px solid {{ site.color.primary-light }};
     outline: 0;
     color: {{ site.color.primary-dark }};
-    background-color: {{ site.color.links }};
+    background-color: {{ site.color.primary-light }};
 }
 
 ul.banner-social-buttons {
@@ -332,6 +384,24 @@ ul.banner-social-buttons li {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
+}
+
+.btn-download {
+    border: 1px solid {{ site.color.primary-light }};
+    color: {{ site.color.primary-dark }};
+    background-color: {{ site.color.primary-light }};
+}
+
+.btn-download:hover,
+.btn-download:focus {
+    border: 1px solid {{ site.color.primary-light }};
+    outline: 0;
+    color: {{ site.color.primary-light }};
+    background-color: {{ site.color.primary-dark }};
+}
+
+ul.download-buttons {
+    margin-top: 0;
 }
 
 footer {
