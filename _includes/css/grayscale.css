@@ -326,6 +326,7 @@ a:focus {
 
 .projects-img {
     margin-top: 15px;
+    max-width: 100%;
 }
 
 .projects-fig {
