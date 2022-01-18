@@ -311,6 +311,10 @@ a:focus {
     height: 100px;
 }
 
+.hyperlinks {
+    color: {{ site.color.secondary-light }}
+}
+
 #projects {
     background-color: {{ site.color.secondary-light }}
 }
