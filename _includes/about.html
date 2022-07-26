@@ -41,7 +41,9 @@
                         <ul class="list-inline banner-buttons">
                             {% for banner in site.banners %}
                             <li>
-                                <img class="banner" src="img/banners/{{ banner.img }}"></img>
+                                <div class="banner-img">
+                                    <img class="banner" src="img/banners/{{ banner.img }}"></img>
+                                </div>
                             </li>
                             {% endfor %}
                         </ul>

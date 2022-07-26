@@ -301,9 +301,13 @@ a:focus {
     margin: 0;
 }
 
+.banner-img {
+    width: 300px;
+}
+
 .banner {
     height: 80px;
-    margin: 10px 80px 10px;
+    margin: 10px auto 10px;
     display: block;
 }
 
