@@ -23,12 +23,10 @@ h1 {
 
 h2 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: bold;
 }
 
 h3 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: bold;
 }
 
 h4,
@@ -42,21 +40,24 @@ h6 {
 }
 
 p {
-    margin: 0 0 10px;
+    margin: 20px 0 20px;
     font-size: 18px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 @media(min-width:767px) {
     p {
-        margin: 0 0 10px;
+        margin: 20px 0 20px;
         font-size: 20px;
         line-height: 1.6;
+        text-align: justify;
     }
 }
 
 a {
-    color: {{ site.color.primary-light }};
+    color: #000000;
+    text-decoration: underline;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -226,7 +227,7 @@ a:focus {
 }
 
 .face {
-    width: 300px;
+    width: 400px;
     border-radius:30%;
     -moz-border-radius:30%;
     -webkit-border-radius:30%;
@@ -278,38 +279,41 @@ a:focus {
 #about {
     width: 100%;
     background-color: {{ site.color.secondary-light }};
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .about-section {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 80px;
-    padding-bottom: 40px;
     color: {{ site.color.primary-dark }};
 }
 
-.banner-section {
+.about-section .container {
+    width: 100%;
+}
+
+.about-block {
+    padding-bottom: 100px;
+}
+
+.banner-block {
     background-color: {{ site.color.primary-light }};
+}
+
+.banner-block .row {
+    margin: 0;
 }
 
 .banner {
     height: 80px;
-    margin-left: 90px;
-    margin-right: 90px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 80px 10px;
     display: block;
 }
 
 #skills {
-    background-color: {{ site.color.secondary-dark }};
+    background-color: {{ site.color.tertiary-light }};
 }
 
 .skills-section {
     padding-bottom: 100px;
-    color: {{ site.color.primary-light }};
+    color: {{ site.color.primary-dark }};
 }
 
 .skills-img-background {

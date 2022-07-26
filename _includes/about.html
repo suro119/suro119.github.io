@@ -1,48 +1,51 @@
     <!-- About Section -->
-    <section id="about" class="container">
+    <section id="about">
         <div class="about-section">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 text-center" style=margin-bottom:80px>
-                    <h1>{{site.title}}</h1>
+            <div class="container">
+                <div class="about-block">
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-3 text-center" style=margin-bottom:80px>
+                            <h1>{{site.title}}</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-lg-offset-1">
+                            <img class="face" src="img/face.jpg"></img>
+                        </div>
+                        <div class="col-lg-5">
+                            <h2>About</h2>
+                            <p>I'm an incoming MS student at <a target="_blank" href="https://www.engineering.columbia.edu/">Columbia University</a> for Fall 2022, majoring in Computer Science with a concentration in Machine Learning.</p>
+                            <p>Previously, I worked at <a target="_blank" href="https://research.samsung.com/">Samsung Research</a> as a Research Engineer in the Visual Perception Team, where I was responsible for AI systems integration.</p> 
+                            <p>I graduated from <a target="_blank" href="https://www.kaist.ac.kr/en/">KAIST</a> with a BS in Computer Science, along with a minor in Electrical Engineering and a specialization in AI.</p>
+                            <p>Currently, I'm actively looking for summer internships as a <b>quant developer</b> or a <b>software engineer</b>. I love meeting new people and learning new things, and would love to work with other brilliant people in an ever-evolving field!</p>
+                            <ul class="list-inline text-center">
+                                <li>
+                                    <a href="files/CV.pdf" target="_blank" class="btn btn-download btn-lg" download="surolee_CV.pdf"><i class="fa fa-file-pdf-o fa-fw"></i> <span class="file-name">CV</span></a>
+                                </li>
+                                <li>
+                                    <a href="mailto:{{ site.email }}" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
+                                </li>
+                                {% for network in site.social %}
+                                <li>
+                                    <a href="{{ network.url }}" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <img class="face" src="img/face.jpg"></img>
-                </div>
-                <div class="col-lg-5">
-                    <p>
-                        &emsp; I'm an incoming MS student at <b>Columbia University</b> for Fall 2022, majoring in Computer Science with a concentration in Machine Learning.<br><br>
-                        &emsp; Previously, I worked at <b>Samsung Research</b> as a Research Engineer in the Visual Perception Team, where I was responsible for AI systems integration.<br><br> 
-                        &emsp; I graduated from <b>KAIST</b> with a BS in Computer Science, along with a minor in Electrical Engineering and a specialization in AI. <br><br>
-                        &emsp; Currently, I'm actively looking for summer internships as a <b>quant developer</b> or a <b>software engineer</b>. I love meeting new people and learning new things, and would love to work with other brilliant people in an ever-evolving field!
-                    </p>
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="files/CV.pdf" target="_blank" class="btn btn-download btn-lg" download="surolee_CV.pdf"><i class="fa fa-file-pdf-o fa-fw"></i> <span class="file-name">CV</span></a>
-                        </li>
-                        <li>
-                            <a href="mailto:{{ site.email }}" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
-                        </li>
-                        {% for network in site.social %}
-                        <li>
-                            <a href="{{ network.url }}" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="banner-section">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <ul class="list-inline banner-buttons">
-                        {% for banner in site.banners %}
-                        <li>
-                            <img class="banner" src="img/banners/{{ banner.img }}"></img>
-                        </li>
-                        {% endfor %}
-                    </ul>
+            <div class="banner-block">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <ul class="list-inline banner-buttons">
+                            {% for banner in site.banners %}
+                            <li>
+                                <img class="banner" src="img/banners/{{ banner.img }}"></img>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

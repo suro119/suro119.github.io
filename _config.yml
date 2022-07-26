@@ -10,6 +10,7 @@ color:
   primary-light: '#FFFFFF'
   secondary-dark: '#444444'
   secondary-light: '#EDEDED'
+  tertiary-light: '#D7D7D7'
 
 # Footer settings
 footer: Your Website
