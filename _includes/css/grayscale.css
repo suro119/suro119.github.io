@@ -42,14 +42,14 @@ h6 {
 }
 
 p {
-    margin: 0 0 25px;
+    margin: 0 0 10px;
     font-size: 18px;
     line-height: 1.5;
 }
 
 @media(min-width:767px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 10px;
         font-size: 20px;
         line-height: 1.6;
     }
@@ -278,9 +278,13 @@ a:focus {
 #about {
     width: 100%;
     background-color: {{ site.color.secondary-light }};
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .about-section {
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 80px;
     padding-bottom: 40px;
     color: {{ site.color.primary-dark }};
@@ -294,8 +298,8 @@ a:focus {
     height: 80px;
     margin-left: 90px;
     margin-right: 90px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: block;
 }
 
@@ -368,6 +372,8 @@ a:focus {
     border: 1px solid {{ site.color.primary-light }};
     color: {{ site.color.primary-dark }};
     background-color: {{ site.color.primary-light }};
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .btn-default:hover,
@@ -378,30 +384,9 @@ a:focus {
     background-color: {{ site.color.primary-dark }};
 }
 
-ul.banner-social-buttons {
+ul.banner-buttons {
     margin-top: 0;
-}
-
-ul.banner-social-buttons li {
-    margin-bottom: 15px;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
+    margin-bottom: 0;
 }
 
 ol {
@@ -414,6 +399,8 @@ ol {
     border: 1px solid {{ site.color.primary-light }};
     color: {{ site.color.primary-dark }};
     background-color: {{ site.color.primary-light }};
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .btn-download:hover,
