@@ -299,8 +299,16 @@ a:focus {
     margin: 0;
 }
 
+@media(max-width:1200px) {
+    .about-buttons {
+        margin: 0;
+        text-align: center;
+    }
+}
+
 .banner-block {
     background-color: {{ site.color.primary-light }};
+    padding-top: 10px;
 }
 
 .banner-block .row {
@@ -308,15 +316,25 @@ a:focus {
 }
 
 .banner-img {
-    width: 300px;
-    max-width: 100%;
-    margin: 0 40px 0;
+    width: 25%;
+    height: 80px;
+    margin: 0 3% 0;
+}
+
+@media(max-width:767px) {
+    .banner-img {
+        width: 40%;
+        height: 80px;
+        margin: 0 3% 0;
+    }
 }
 
 .banner {
-    height: 80px;
-    margin: 10px auto 10px;
+    max-width: 100%;
+    max-height: 90%;
+    margin: auto;
     display: block;
+    vertical-align: middle;
 }
 
 #skills {
@@ -400,11 +418,6 @@ a:focus {
     background-color: {{ site.color.primary-dark }};
 }
 
-ul.banner-buttons {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 ol {
     font-size: 20px;
     text-align: left;
@@ -429,6 +442,11 @@ ol {
 
 ul.download-buttons {
     margin-top: 0;
+}
+
+ul.banner-buttons {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 footer {

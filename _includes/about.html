@@ -43,10 +43,8 @@
                     <div class="col-lg-12 text-center">
                         <ul class="list-inline banner-buttons">
                             {% for banner in site.banners %}
-                            <li>
-                                <div class="banner-img">
-                                    <img class="banner" src="img/banners/{{ banner.img }}"></img>
-                                </div>
+                            <li class="banner-img">
+                                <img class="banner" src="img/banners/{{ banner.img }}"></img>
                             </li>
                             {% endfor %}
                         </ul>
