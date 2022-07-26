@@ -309,6 +309,7 @@ a:focus {
 
 .banner-img {
     width: 300px;
+    max-width: 100%;
     margin: 0 40px 0;
 }
 
