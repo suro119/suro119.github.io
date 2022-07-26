@@ -226,14 +226,14 @@ a:focus {
 }
 
 .face {
-    width: 200px;
+    width: 300px;
     border-radius:30%;
     -moz-border-radius:30%;
     -webkit-border-radius:30%;
     
     margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     display: block;
 }
 
@@ -281,9 +281,22 @@ a:focus {
 }
 
 .about-section {
-    padding-top: 50px;
-    padding-bottom: 150px;
+    padding-top: 80px;
+    padding-bottom: 40px;
     color: {{ site.color.primary-dark }};
+}
+
+.banner-section {
+    background-color: {{ site.color.primary-light }};
+}
+
+.banner {
+    height: 80px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
 }
 
 #skills {
@@ -353,16 +366,16 @@ a:focus {
 
 .btn-default {
     border: 1px solid {{ site.color.primary-light }};
-    color: {{ site.color.primary-light }};
-    background-color: transparent;
+    color: {{ site.color.primary-dark }};
+    background-color: {{ site.color.primary-light }};
 }
 
 .btn-default:hover,
 .btn-default:focus {
     border: 1px solid {{ site.color.primary-light }};
     outline: 0;
-    color: {{ site.color.primary-dark }};
-    background-color: {{ site.color.primary-light }};
+    color: {{ site.color.primary-light }};
+    background-color: {{ site.color.primary-dark }};
 }
 
 ul.banner-social-buttons {
@@ -390,6 +403,12 @@ ul.banner-social-buttons li {
         margin-bottom: 0;
     }
 }
+
+ol {
+    font-size: 20px;
+    text-align: left;
+}
+
 
 .btn-download {
     border: 1px solid {{ site.color.primary-light }};

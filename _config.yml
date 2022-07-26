@@ -2,7 +2,7 @@
 title: Suro Lee
 email: sulee1415@gmail.com
 url: https://suro119.github.io
-description: "AI Researcher | Undergraduate Student"
+description: 
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -18,14 +18,21 @@ footer: Your Website
 social:
   # - title: twitter
   #   url: https://twitter.com/SBootstrap
-  - title: facebook
-    url: https://www.facebook.com/suro.lee.1/
+  - title: linkedin
+    url: https://www.linkedin.com/in/suro-lee-82671b1b9/
   # - title: stack-overflow
   #   url: http://stackoverflow.com/questions/tagged/jekyll
   # - title: bitbucket
   #   url: http://bitbucket.org/jekyll
   - title: github
     url: https://github.com/suro119
+  - title: facebook
+    url: https://www.facebook.com/suro.lee.1/
+
+banners:
+  - img: columbia.png
+  - img: samsung.jpeg
+  - img: kaist.png
 
 # Build settings
 markdown: kramdown

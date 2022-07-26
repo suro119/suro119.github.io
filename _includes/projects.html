@@ -4,10 +4,34 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Projects</h2>
-                    <p>These projects were either done for research, in-class projects, or just for fun! The repositories and reports are attached if available.</p>
                     <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a> -->
                 </div>
                 <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 mb-10 project-container" id="ai-kitchen">
+                        <h3>AI Recipe Navigation Demo</h3>
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <figure class="projects-fig">
+                                    <img class="projects-img" src="img/projects/ai-kitchen.png" height="350"></img>
+                                    <figcaption>AI Recipe Navigation</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <p>
+                            At Samsung Research, I was responsible for integrating novel AI research from <em>Samsung AI Center - Toronto</em>, <em>Samsung AI Center - Cambridge</em>, and 
+                            <em>Samsung Research</em> into an AI recipe navigation demo. The AI recipe navigation demo consisted of five modules:
+                        </p>
+                        <ol>
+                            <li>an annotation server responsible for parsing recipe annotations</li>
+                            <li>a main server responsible for temporally segmenting recipe videos, matching user query to a recipe caption, and returning the corresponding video segment</li>
+                            <li>web client implemented with flask, svelte, bootstrap, and node.js that allows the user to query the model and displays model output by playing the corresponding video segment on YouTube.</li>
+                            <li>an action recognition module that detects user action through a camera and sends a recipe query to the server</li>
+                            <li>an automatic speech recognition module that allows the user to query the model through a microphone</li>
+                        </ol>
+                        <p>
+                            gRPC, HTTP, and Mosquitto was used for communication between the different modules. This demo was part of the Samsung Research Open Lab 2022 exhibition.
+                        </p>
+                    </div>
                     <div class="col-lg-10 col-lg-offset-1 mb-10 project-container" id="deep-compression">
                         <h3>Content-Aware and Task-Aware Deep Image Compression</h3>
                         <div class="row">
@@ -29,25 +53,6 @@
                             </li>
                             <li>
                                 <a href="https://github.com/suro119/CAE" class="btn btn-download btn-lg"><i class="fa fa-github fa-fw"></i> <span class="file-name">Github</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-10 col-lg-offset-1 mb-10 project-container">
-                        <h3>Using Side Information for Task-Aware Image Compression</h3>
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <figure class="projects-fig">
-                                    <img class="projects-img" src="img/projects/side_info.png" width="400"></img>
-                                    <figcaption>Proposed Model</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                        <p>
-                            Inspired by the improvements achieved in deep image compression through utilizing side information, we exploited the fact that only some code channels play a prominent role in image classification. To do so, we extracted side information from the compressed code using two different methods as an attempt to enhance classification performance.
-                        </p>
-                        <ul class="list-inline download-buttons">
-                            <li>
-                                <a href="files/urp2.pdf" class="btn btn-download btn-lg" download="research_paper_2.pdf"><i class="fa fa-file-pdf-o fa-fw"></i> <span class="file-name">PDF</span></a>
                             </li>
                         </ul>
                     </div>
@@ -126,41 +131,6 @@
                             </li>
                             <li>
                                 <a href="https://github.com/suro119/coreference_resolution" class="btn btn-download btn-lg"><i class="fa fa-github fa-fw"></i> <span class="file-name">Github</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-10 col-lg-offset-1 mb-10 project-container">
-                        <h3>Feature Matching using MATLAB</h3>
-                        <div class="row">
-                            <div class="col-lg-6 col-lg-offset-3">
-                                <figure class="projects-fig">
-                                    <img class="projects-img", src="img/projects/feature_matching.png" width="400"></img>
-                                </figure>
-                            </div>
-                        </div>
-                        <p>As part of my "Introduction to Computer Vision" course, I implemented a feature matching algorithm using normalized patches and SIFT-like descriptors, achieving 83%, 92%, and 4% accuracy for the 100 most confident matches in the Notre Dame, Mount Rushmore, and Gaudi's Palace images, respectively.</p>
-                        <ul class="list-inline download-buttons">
-                            <li>
-                                <a href="files/feature_matching.pdf" class="btn btn-download btn-lg" download="feature_matching.pdf"><i class="fa fa-file-pdf-o fa-fw"></i> <span class="file-name">PDF</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/suro119/feature_matching" class="btn btn-download btn-lg"><i class="fa fa-github fa-fw"></i> <span class="file-name">Github</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-10 col-lg-offset-1 mb-10 project-container">
-                        <h3>PintOS Project by Stanford</h3>
-                        <div class="row">
-                            <div class="col-lg-6 col-lg-offset-3">
-                                <figure class="projects-fig">
-                                    <img class="projects-img", src="img/projects/stanford.png" width="200"></img>
-                                </figure>
-                            </div>
-                        </div>
-                        <p>PintOS is a simple operating system framework that requires the implementation of threads, user programs, virtual memory, and filesystems. This project was completed as part of my "Operating Systems and Lab" course.</p>
-                        <ul class="list-inline download-buttons">
-                            <li>
-                                <a href="https://github.com/suro119/pintos" class="btn btn-download btn-lg"><i class="fa fa-github fa-fw"></i> <span class="file-name">Github</span></a>
                             </li>
                         </ul>
                     </div>
