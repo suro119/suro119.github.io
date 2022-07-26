@@ -234,7 +234,7 @@ a:focus {
     -webkit-border-radius:30%;
     
     margin: auto;
-    margin-top: 0px;
+    margin-top: 40px;
     margin-bottom: 20px;
     display: block;
 }
@@ -283,6 +283,7 @@ a:focus {
 }
 
 .about-section {
+    padding-top: 50px;
     color: {{ site.color.primary-dark }};
 }
 
@@ -291,7 +292,7 @@ a:focus {
 }
 
 .about-block {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .about-buttons {
