@@ -45,7 +45,7 @@
                         <p>
                             In this research, we focused on improving deep image compression networks by using content-aware networks and task-aware networks.
                             We tested content-aware performance using the CelebA dataset and tested task-aware performance using ImageNet. For task-awareness, we performed classification from the compressed code (as shown in the image above), which uses less storage and results in faster inference. To train this classification network, we used a parametrized joint loss consisting of a compression loss and a task loss.
-                            Jointly trained task-aware networks outperformed JPEG in terms of compression performance (measured by MSSSIM and PSNR) and task performance (measured by accuracy) under the same bitrate.
+                            Content-aware image compression achieved up to 2% improvement in terms of PSNR, and task-aware compression achieved up to 11% improvement in terms of accuracy for low resolution images.
                         </p>
                         <ul class="list-inline download-buttons">
                             <li>
@@ -75,7 +75,8 @@
                                 </figure>
                             </div>
                         </div>
-                        <p>During my internship at Koh Young Technology, I implemented a prototype for a distributed, real-time SMT (surface-mount technology) inspection process using Apache Spark’s Machine Learning Library. For efficient training and inference, I created and managed a distributed cluster for data streaming using Apache Kafka. Overall, I achieved 5-10x speed up from batch processing.</p>
+                        <p>During my internship at Koh Young Technology, I implemented a prototype for a distributed, real-time SMT (surface-mount technology) inspection process using Apache Spark’s Machine Learning Library. 
+                            For efficient training and inference, I created and managed a distributed cluster for data streaming using Apache Kafka. Overall, I achieved up to 10x speed up from batch processing.</p>
                     </div>
                     <div class="col-lg-10 col-lg-offset-1 mb-10 project-container">
                         <h3>Hybrid Adaptive Ant Colony System for TSP</h3>
@@ -86,7 +87,9 @@
                                 </figure>
                             </div>
                         </div>
-                        <p>As part of my "AI-based Software Engineering" course, I implemented a meta-heuristic solution to the traveling salesman problem by devising my own improved Ant Colony System (ACS) algorithm. The algorithm utilizes randomized local search to speed up convergence, and dynamically tunes ACS parameters to encourage exploration away from the local minima. My algorithm outperforms the two-opt algorithm and conventional ACS in terms of convergence speed and best distance.</p>
+                        <p>As part of my <em>AI-based Software Engineering</em> course, I implemented a meta-heuristic solution for the traveling salesman problem by devising my own improved Ant Colony System (ACS) algorithm. 
+                            The algorithm utilizes randomized local search to speed up convergence, and dynamically tunes ACS parameters to encourage exploration away from the local minima. My algorithm outperforms the two-opt algorithm and conventional ACS in terms of convergence speed, 
+                            and removed the need to set experiment-specific parameters as required for convential ACS.</p>
                         <ul class="list-inline download-buttons">
                             <li>
                                 <a href="files/haacs.pdf" target="_blank" class="btn btn-download btn-lg" download="haacs.pdf"><i class="fa fa-file-pdf-o fa-fw"></i> <span class="file-name">PDF</span></a>
